@@ -3,6 +3,15 @@
 Author: [Joe Testa](https://www.positronsecurity.com/company/) ([@therealjoetesta](https://twitter.com/therealjoetesta))
 
 
+## Preparation
+
+packages: libpcap-dev autoconf build-essential zlib1g-dev libssl-dev
+
+```bash
+sudo apt-get install -y libpcap-dev
+
+```
+
 ## Overview
 
 This penetration testing tool allows an auditor to intercept SSH connections.  A patch applied to the OpenSSH v7.5p1 source code causes it to act as a proxy between the victim and their intended SSH server; all plaintext passwords and sessions are logged to disk.
